@@ -1,0 +1,84 @@
+body {
+  background-color: rgba(202, 202, 206, 0.842);
+}
+
+.profile {
+  background-color: white;
+  width: 300px;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
+.avatar {
+  display: block;
+  width: 150px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  background-color: rgba(51, 46, 46, 0.39);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.name {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+}
+
+.tag {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+
+  color: rgb(53, 2, 2);
+
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.location {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+
+  color: rgb(53, 2, 2);
+
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 30px;
+
+  border-bottom: 1px solid rgb(53, 2, 2);
+}
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.statsCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.label {
+  color: rgb(53, 2, 2);
+  margin-bottom: 5px;
+  padding-top: 5px;
+}
+.statsCard:not(:last-child) {
+  margin-right: 35px;
+}
