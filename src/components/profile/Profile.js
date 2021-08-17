@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styles from "./Profile.module.css";
 
+
 export default function Profile({ name, tag, location, avatar, stats }) {
   return (
     <div className={styles.profile}>
@@ -30,10 +31,14 @@ export default function Profile({ name, tag, location, avatar, stats }) {
   );
 }
 
+Profile.defaultProps = {
+  avatar: 'https://www.flaticon.com/svg/static/icons/svg/3135/3135768.svg',
+};
+
 Profile.propTypes = {
   name: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
-  avatar: PropTypes.string.isRequired,
+  avatar: PropTypes.string,
   stats: PropTypes.object.isRequired,
 };
